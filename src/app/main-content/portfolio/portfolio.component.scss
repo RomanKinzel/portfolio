@@ -1,0 +1,97 @@
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // height: 100vh;
+    gap: 100px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+h1 {
+    font-family: 'syne';
+    font-size: 78px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-family: 'syne';
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.projektarea {
+    display: flex;
+    width: 95vw;
+    gap: 40px;
+}
+
+img {
+    max-width: 40vw;
+    height: auto;
+    border-radius: 20px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90vh;
+    gap: 20px;
+}
+
+.text_green {
+    font-family: 'overpass';
+    font-size: 26px;
+    font-weight: 500;
+    color: #22bd91;
+}
+
+.text {
+    font-family: 'overpass';
+    font-size: 1rem;
+    font-weight: 500;
+    max-width: 45vw;
+}
+
+.btn {
+    width: 30vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    background-color: #fffcf2;
+    border: solid 2px black;
+    border-radius: 5px;
+    font-family: 'syne';
+    font-size: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    font-size: 24px;
+    font-weight: 700;
+    width: 190px;
+    border: solid 4px black;
+}
+
+.arrow {
+    position: relative;
+    >img {
+        width: 240px;
+        height: 240px;
+    }
+}

@@ -1,0 +1,19 @@
+<app-navbar class="navbar"></app-navbar>
+
+<div class="landingtext">
+    <h1>Frotend</h1>
+    <h1 class="h1margin">Developer</h1>
+</div>
+<div class="nameArea">
+    <img src="./../../../assets/img/landingpage/vector.png" alt="">
+    <h3>Roman Kinzel</h3>
+</div>
+
+<div class="scrollDownArea">
+    <div class="email">roki&#64;web.de</div>
+    <div class="scrollDown">
+        <img *ngFor="let image of images; let i = index" [src]="image" [style.display]="i === currentIndex ? 'block' : 'none'" alt="">
+        <span>Scroll</span>
+        <span>Down</span>
+      </div>
+</div>

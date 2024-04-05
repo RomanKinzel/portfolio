@@ -1,0 +1,70 @@
+section {
+  display: flex;
+  justify-content: center;
+}
+
+.skillsArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid;
+    margin-top: 200px;
+    max-width: 1000px;
+    max-height: 540px;
+    height: 100vh;
+
+}
+
+.skillsheader {
+    position: relative;
+    top: -9rem;
+    background-color: #fffcf2;
+
+}
+
+h1 {
+    max-width: max-content;
+    font-family: 'syne';
+    font-weight: 800;
+    font-size: 78px;
+    &:hover {
+        color: #22bd91;
+    }
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap; /* Bilder werden in Zeilen und bei Bedarf in mehrere Zeilen umgebrochen */
+    justify-content: center; /* Bilder werden horizontal zentriert */
+    align-items: center;
+    gap: 10px 78px;
+    margin-top: -100px;
+    margin-bottom: 50px;
+  }
+  
+  .image-item {
+    display: flex;
+    flex-direction: column; /* Bild und Unterschrift werden vertikal angeordnet */
+    align-items: center; /* Zentrieren Sie das Bild und die Unterschrift horizontal */
+    margin: 20px; /* Abstand zwischen den Bildern */
+  }
+  
+  .image-item img {
+    width: 70px; /* Passen Sie die Breite und Höhe des Bildes nach Bedarf an */
+    height: 75px;
+  }
+  
+  .image-item span {
+    font-family: 'overpass';
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 10px; /* Abstand zwischen dem Bild und der Unterschrift */
+    font-size: 14px; /* Passen Sie die Schriftgröße der Unterschrift nach Bedarf an */
+    word-wrap: break-word;
+}
+
+  .image-item span:hover {
+    cursor: pointer;
+    color: #22bd91;
+}

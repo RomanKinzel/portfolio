@@ -1,0 +1,73 @@
+.navbar {
+    position: fixed;
+    right: 0vw;
+    left: 0vw;
+    top: 0;
+    height: 92px;
+    background-color: #fffcf2;
+}
+
+.lndingpage {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+
+.landingtext {
+    max-width: 1440px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    >h1 {
+        font-family: 'syne';
+        font-weight: 800;
+        font-size: 128px;
+        margin-bottom: -50px;
+    }
+}
+
+.h1margin {
+    margin-top: 0;
+}
+
+.nameArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    
+    >img {
+        height: 3px;
+    }
+
+    >h3 {
+        font-family: 'overpass';
+        color: #00BC8F;
+        font-size: 48px;
+        font-weight: 700;
+    }
+}
+
+.scrollDownArea {
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20vh;
+}
+
+.email {
+    color: black;
+    transform: rotate(270deg);
+    font-size: 22px;
+}
+
+.scrollDown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

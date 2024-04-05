@@ -1,0 +1,57 @@
+/* dialog.component.scss */
+
+.dialog-container {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #fffcf2;
+    animation: slideInFromBottom 0.5s ease-in-out;
+  }
+  
+  h2 {
+    font-family: 'syne';
+    font-size: 96px;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  img {
+    height: 80px;
+    width: auto;
+  }
+  
+  .image-animation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-animation img {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .animate-hover:hover + .image-animation img:first-child {
+    opacity: 0;
+  }
+  
+  .animate-hover:hover + .image-animation img:nth-child(2) {
+    opacity: 0;
+    transition-delay: 200ms; /* Verzögerung von 200ms für das zweite Bild */
+  }
+  
+  .animate-hover:hover + .image-animation img:last-child {
+    opacity: 1;
+  }
+  
+  @keyframes slideInFromBottom {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
