@@ -1,9 +1,13 @@
 section {
-    background-color: black;
+    background-image: url('./../../assets/img/contact/bg.png');
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 h1 {
@@ -12,6 +16,8 @@ h1 {
     font-weight: 800;
     font-size: 78px;
     margin: 0;
+    position: relative;
+    left: 0;
 }
 
 h3 {
@@ -19,6 +25,7 @@ h3 {
     font-family: 'syne';
     font-weight: 700;
     font-size: 32px;
+    margin: 0;
 }
 
 span {
@@ -61,4 +68,6 @@ input[type=text],[type=email], select, textarea {
     background-color: black;
     padding: 20px;
     width: fit-content;
+    width: 50vw;
+    height: 300px;
   }

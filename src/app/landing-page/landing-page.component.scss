@@ -5,6 +5,14 @@
     top: 0;
     height: 92px;
     background-color: #fffcf2;
+    z-index: 10;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
 }
 
 .lndingpage {
@@ -21,6 +29,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100vw;
 
     >h1 {
         font-family: 'syne';
@@ -70,4 +79,72 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+@media screen and (max-width: 1075px) {
+    .landingtext{
+        padding-top: 100px;
+    >h1 {
+        font-size: 100px;
+        margin-top: 10px;
+    }}
+
+}
+
+
+@media screen and (max-width: 880px) {
+    .landingtext{
+    >h1 {
+        font-size: 80px;
+        margin-bottom: -40px;
+    }}
+    .nameArea {
+        padding-top: 50px;
+        flex-direction: column;
+        gap: 0;
+
+        >h3 {
+            margin-top: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .landingtext{
+        >h1 {
+            font-size: 70px;
+            margin-bottom: -35px;
+        }}
+}
+
+@media screen and (max-width: 620px) {
+    .landingtext{
+        >h1 {
+            font-size: 60px;
+            margin-bottom: -30px;
+        }}
+}
+
+@media screen and (max-width: 430px) {
+
+    .landingtext{
+        >h1 {
+            font-size: 32px;
+            margin-bottom: -20px;
+        }}
+        .nameArea {
+            padding-top: 50px;
+            flex-direction: column;
+            gap: 0;
+    
+            >h3 {
+                font-size: 30px;
+            }
+        }
+
+        .nameArea {
+            >img {
+                display: none;
+            }
+        }
 }

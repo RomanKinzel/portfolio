@@ -4,4 +4,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 1440px;
+    width: 100vw;
+}
+
+html {
+    width: 100vw;
 }

@@ -13,6 +13,7 @@ section {
     justify-content: center;
     align-items: center;
     margin-bottom: 80px;
+    max-width: 80vw;
 }
 
 h1 {
@@ -20,6 +21,11 @@ h1 {
     font-size: 78px;
     font-weight: 800;
     margin-bottom: 10px;
+}
+
+.text-header {
+    font-family: 'overpass';
+    font-size: 1rem;
 }
 
 h2 {
@@ -30,6 +36,12 @@ h2 {
 }
 
 .projektarea {
+    display: flex;
+    width: 95vw;
+    gap: 40px;
+}
+
+.projektarea-reverse {
     display: flex;
     width: 95vw;
     gap: 40px;
@@ -93,5 +105,39 @@ button:hover {
     >img {
         width: 240px;
         height: 240px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+   .projektarea {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .projektarea-reverse {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+   }
+
+   img {
+    max-width: 70vw;
+   }
+
+   .btn {
+    width: 80vw;
+   }
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+      font-size: 60px;  
+    }
+}
+
+@media screen and (max-width: 430px) {
+    h1 {
+      font-size: 36px;  
     }
 }

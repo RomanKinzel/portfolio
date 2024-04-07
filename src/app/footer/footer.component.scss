@@ -1,0 +1,32 @@
+
+section {
+    background-color: black;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span {
+    color: white;
+}
+
+.div-left {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    gap: 10px;
+}
+
+.div-right {
+    display: flex;
+    gap: 20px;
+    margin-right: 50px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+}

@@ -13,6 +13,7 @@ import { MatDialog } from '@angular/material/dialog';
 export class NavbarComponent {
 
   openAnimationImages: string[] = [
+    "./../../../assets/img/navbar/menuOpen/burger.png",
     "./../../../assets/img/navbar/menuOpen/transition1.png",
     "./../../../assets/img/navbar/menuOpen/transition2.png",
     "./../../../assets/img/navbar/menuOpen/transition3.png",
@@ -20,7 +21,6 @@ export class NavbarComponent {
   ];
 
   closeAnimationImages: string[] = [
-    "./../../../assets/img/navbar/menuOpen/burger.png",
     "./../../../assets/img/navbar/menuClose/close1.png",
     "./../../../assets/img/navbar/menuClose/close2.png",
     "./../../../assets/img/navbar/menuClose/close3.png",
@@ -28,6 +28,7 @@ export class NavbarComponent {
   ];
 
   isMenuOpen: boolean = false;
+  visitedFirst: boolean = false;
   currentIndex: number = 0;
   interval: any;
   
@@ -74,7 +75,7 @@ export class NavbarComponent {
     this.currentIndex = 0; // Starten Sie die Animation von Anfang an
     this.interval = setInterval(() => {
       this.showNextImage(animationImages);
-    }, 300);
+    }, 250);
   }
 
 
@@ -87,7 +88,12 @@ export class NavbarComponent {
   }
 
   getImageSrc(): string {
+    if (!this.isMenuOpen && !this.visitedFirst) {
+      return this.openAnimationImages[0];
+    } else {
     const animationImages = this.isMenuOpen ? this.openAnimationImages : this.closeAnimationImages;
+    this.visitedFirst = true;
     return animationImages[this.currentIndex];
+    }
   }
 }
