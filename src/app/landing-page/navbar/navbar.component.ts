@@ -1,16 +1,20 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { DialogComponent } from '../../main-content/dialog/dialog.component';
 import { MatDialog } from '@angular/material/dialog';
+import { TranslateModule } from '@ngx-translate/core';
+import { TranslationService } from '../../translation.service';
 
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [DialogComponent],
+  imports: [DialogComponent, TranslateModule],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
+
+  translate = inject(TranslationService);
 
   openAnimationImages: string[] = [
     "./../../../assets/img/navbar/menuOpen/burger.png",

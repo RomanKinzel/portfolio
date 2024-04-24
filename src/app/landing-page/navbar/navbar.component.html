@@ -1,11 +1,15 @@
 <nav>
     <div class="navbar">
         <span>RoKi</span>
+        <div class="language">
+            <p  (click)="translate.switchLanguage('en')">EN</p>
+            <p  (click)="translate.switchLanguage('de')">DE</p>
+        </div>
         <div class="links">
-        <a href="#aboutMe">About Me |</a>
-        <a href="#mySkills">My Skills |</a>
-        <a href="#portfolio">Projekts |</a>
-        <a href="#contact">Say Hi!</a>
+        <a href="#aboutMe">{{ "About Me" | translate}} |</a>
+        <a href="#mySkills">{{ "My Skills" | translate}} |</a>
+        <a href="#portfolio">{{ "Projekts" | translate}} |</a>
+        <a href="#contact">{{ "Say Hi!" | translate}}</a>
         </div>
         <!-- <img [src]="getImageSrc()" alt="" (click)="onClick(); openDialog()" > -->
     </div>

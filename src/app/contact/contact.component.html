@@ -1,45 +1,46 @@
 <section id="contact">
   <div class="flexLeft">
-    <h1>Say Hi!</h1>
+    <h1>{{ "Say Hi!" | translate}}</h1>
   </div>
 <div>
-    <h3>Want to discuss a new Project?</h3>
-    <span> Say hello! let´s discuss your ideas and make it happen</span>
+    <h3>{{ "discussANewProjekt" | translate}}</h3>
+    <span> {{ "sayhello" | translate}}</span>
 </div>
 
 
 <div class="container">
     <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
   
-      <label for="name">Name</label>
-      <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="Your name.." required>
+      <label for="name"></label>
+      <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="{{ 'yourname' | translate}}" required>
       @if (!name.valid && name.touched) {
-        <span class="not-valid">Please enter your name</span>
+        <span class="not-valid">{{ "validname" | translate}}</span>
       }
       <label for="email">E-Mail</label>
-      <input #mail="ngModel" [(ngModel)]="contactData.email" type="text" id="email" name="email" placeholder="Your mail.." pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
+      <input #mail="ngModel" [(ngModel)]="contactData.email" type="text" id="email" name="email" placeholder="{{ 'yourmail' | translate}}" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
       @if (!mail.valid && mail.touched) {
-        <span class="not-valid">Please enter your email</span>
+        <span class="not-valid">{{ "validmail" | translate}}</span>
       }
 
       <label for="message">Subject</label>
-      <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" id="message" name="message" placeholder="Write something.." style="height:200px" required></textarea>
+      <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" id="message" name="message" placeholder="{{ 'yourmessage' | translate}}"style="height:200px" required></textarea>
   
       @if (!message.valid && message.touched) {
-        <span class="not-valid">Please enter a message</span>
+        <span class="not-valid">{{ "validtext" | translate}}</span>
       }
       <div>
         <input type="checkbox" #policy="ngModel" [(ngModel)]="contactData.policy" [ngModelOptions]="{standalone: true}" id="policy" required>
-        <label class="privacy-policy" type="checkbox" for="checkbox">I´ve read the <a href="">privacy policy</a> and agree to the processing of my data as outlined </label>
+        <label class="privacy-policy" type="checkbox" for="checkbox"> {{ "validpolicy1" | translate}}<a href="">{{ "validpolicylink" | translate}}</a>  {{ "validpolicy2" | translate}}</label>
         @if (!policy.valid) {
-          <span class="not-valid">Please accept the privacy policy</span>
+          <br>
+          <span class="not-valid">{{ "validpolicytext" | translate}}</span>
         }
       </div>
       <br>
       @if (policy.valid && message.valid && mail.valid && name.valid) {
-        <input type="submit" value="Send message">
+        <input type="submit" value="{{ 'Send message' | translate}}">
       } @else {
-      <input disabled type="submit" value="Send message">
+      <input disabled type="submit" value="{{ 'Send message' | translate}}">
       }
     </form>
   </div>

@@ -1,0 +1,28 @@
+{
+    "About Me":"Über Mich",
+    "Projekts":"Projekte",
+    "My Skills":"Skills",
+    "Say Hi!":"Sag Hi!",
+    "Developer":"Entwickler",
+    "iam":"Ich bin Front-End-Entwickler aus Landau, Deutschland. Ich helfe Designern und Unternehmen, ihre Ideen zum Leben zu erwecken. Kreativität und logisches Denken sind Fähigkeiten, die ich entwickelt habe, um Ideen in hochwertige Produkte umzusetzen.",
+    "if":"Wenn Sie denken, dass ich gut zu Ihren Projekten passen würde, kontaktieren Sie mich bitte!",
+    "letstalk":"Lass uns sprechen",
+    "explore":"Erkunden Sie eine Auswahl meiner Arbeit hier - Interagieren Sie mit Projekten, um meine Fähigkeiten in Aktion zu sehen.",
+    "jointext":"Ein Aufgabenmanagement-Board inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben mithilfe von Drag-and-Drop-Funktionen, weise Benutzer und Kategorien zu.",
+    "ElPolloLocotext":"Ein einfaches Jump-and-Run-Spiel basierend auf einem objektorientierten Ansatz. Hilf Pepe gegen das böse Killerhuhn.",
+    "pokedextext":"Basierend auf der PokéAPI ist dies eine einfache Bibliothek, die Pokémon-Informationen bereitstellt und katalogisiert.",
+    "discussANewProjekt":"Sie möchten über ein neues Projekt sprechen?",
+    "sayhello":"Sag hallo! Lass uns deine Ideen besprechen und sie umsetzen.",
+    "yourname":"Dein Name...",
+    "validname":"Bitte Name eingeben",
+    "yourmail":"Deine Email..",
+    "validmail":"Bitte Email Adresse eigeben",
+    "yourmessage":"Schreibe etwas..",
+    "validtext":"Bitte Nachricht eingeben",
+    "validpolicy1":"Ich habe die",
+    "validpolicylink":"Datenschutzrichtlinie",
+    "validpolicy2":"gelesen und stimme der Verarbeitung meiner Daten gemäß den darin dargelegten Bedingungen zu.",
+    "validpolicytext":"Bitte akzeptieren Sie die Datenschutzrichtlinie.",
+    "Send message":"Nachricht abschicken"
+
+}
