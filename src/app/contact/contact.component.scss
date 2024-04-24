@@ -71,3 +71,27 @@ input[type=text],[type=email], select, textarea {
     width: 50vw;
     height: 300px;
   }
+
+  .not-valid {
+    color: red;
+    font-size: 16px;
+  }
+
+  .privacy-policy {
+    color: white;
+    font-size: 16px;
+  }
+
+  .arrow {
+    position: relative;
+    bottom: 0;
+    left: 40vw;
+    background-image: url(../../assets/img/contact/arrow1.png);
+    width: 60px;
+    height: 80px;
+    cursor: pointer;
+  }
+
+  .arrow:hover {
+    background-image: url(../../assets/img/contact/arrow2.png);
+  }

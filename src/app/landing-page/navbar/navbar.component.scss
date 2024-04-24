@@ -1,6 +1,6 @@
 
 .navbar {
-    max-width: 1440px;
+    // max-width: 1440px;
     height: 92px;
     display: flex;
     justify-content: space-between;
@@ -34,3 +34,19 @@
     }
 }
 
+@media screen and (max-width: 500px) {
+    .links {
+    
+        >a {
+            font-size: 12px;
+            font-weight: 500;
+        }
+        >a:hover {
+            color: #22bd91;
+        }
+    }
+
+    span {
+        display: none;
+    }
+}

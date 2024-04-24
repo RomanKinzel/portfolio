@@ -12,6 +12,7 @@ section {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
     width: 100vw;
 }
 
@@ -73,12 +74,14 @@ section {
     color: black;
     transform: rotate(270deg);
     font-size: 22px;
+    margin-left: 20px;
 }
 
 .scrollDown {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-right: 20px;
 }
 
 @media screen and (max-width: 1075px) {
@@ -123,6 +126,10 @@ section {
             font-size: 60px;
             margin-bottom: -30px;
         }}
+
+        .scrollDownArea {
+            align-items: normal;
+        }
 }
 
 @media screen and (max-width: 430px) {

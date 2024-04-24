@@ -4,14 +4,28 @@
     justify-content: center;
     gap: 42px;
     height: 100vh;
+    max-width: 1440px;
+    width: 90vw;
 }
 
 section {
     display: flex;
     flex-direction: column;
-    max-width: 80vw;
+    // max-width: 80vw;
     align-items: center;
     justify-content: center;
+
+    
+}
+
+.textArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 60vw;
+    gap: 20px;
 
     >h1 {
         font-family: 'syne';
@@ -62,7 +76,8 @@ img {
     .content {
         flex-direction: column;
     }
-    section {
+    .textArea {
+        width: 80vw;
         >h1 {
             font-size: 70px;
             font-weight: 800;
@@ -79,7 +94,7 @@ img {
 }
 
 @media screen and (max-width: 750px) {
-    section {
+    .textArea {
         >h1 {
             font-size: 3rem;
         }
@@ -87,7 +102,7 @@ img {
 }
 
 @media screen and (max-width: 475px) {
-    section {
+    .textArea {
         >h1 {
             font-size: 2rem;
         }
@@ -102,7 +117,7 @@ img {
     .content {
         flex-direction: column;
     }
-    section {   
+    .textArea {   
         >h1 {
             font-size: 2rem;
             font-weight: 800;

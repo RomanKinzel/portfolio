@@ -4,8 +4,16 @@ body {
     flex-direction: column;
     background-color: #fffcf2;
     justify-content: center;
-    align-items: normal;
+    align-items: center;
     width: 100vw;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 
